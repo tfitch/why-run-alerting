@@ -1,0 +1,10 @@
+name             'why-run-alerting'
+maintainer       'Tyler Fitch'
+maintainer_email 'tfitch@getchef.com'
+license          'MIT'
+description      'Installs/Configures why-run-alerting'
+long_description 'Installs/Configures why-run-alerting'
+version          '0.1.0'
+
+depends 'chef-splunk'
+depends 'cron'
