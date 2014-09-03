@@ -14,4 +14,8 @@ suites:
   - name: default
     run_list:
       - recipe[why-run-alerting::default]
-    attributes:
+    attributes: {
+    	loggly_username: <%= ENV['LOGGLY_USERNAME'] %>,
+      loggly_appname: <%= ENV['LOGGLY_APPNAME'] %>,
+      loggly_access_key: <%= ENV['LOGGLY_KEY'] %>
+    }
